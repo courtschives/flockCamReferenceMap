@@ -1,6 +1,6 @@
 # Flock Camera Cross-Reference Map
 
-An interactive US map cross-referencing ALPR (Flock-style) camera locations
+An interactive US map cross-referencing ALPR (Flock) camera locations
 with county-level population/race, religion, and crime data, so patterns
 between them can be visually explored.
 

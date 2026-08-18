@@ -1,0 +1,33 @@
+# Ignore local credentials (do not commit)
+credentials.txt
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Raw/source data - huge (23GB+ combined: national + per-state OSM PBF
+# extracts, raw religion census spreadsheets) and fully reproducible by
+# re-running the data_pipeline scripts. Never belongs in git.
+data/geofabrik/
+data/raw/
+data/*.pbf
+data/tmp_tiger/
+
+# Intermediate/raw pipeline outputs - not what the site serves (see
+# data/output/ below), large, and regenerated on every pipeline run.
+data/snapshots/
+
+# data/output/ IS the deployed site (checkpoint_map.html/js + the
+# checkpoint_*.json files) and should be committed - intentionally not
+# excluded here.
+
+# Claude Code local tool state - not project content.
+.claude/

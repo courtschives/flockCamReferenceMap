@@ -1,0 +1,10 @@
+[build]
+  publish = "data/output"
+
+# Serve checkpoint_map.html at the bare root URL. A 200 rewrite (not a
+# redirect) so the address bar stays on the clean domain instead of
+# navigating to /checkpoint_map.html.
+[[redirects]]
+  from = "/"
+  to = "/checkpoint_map.html"
+  status = 200

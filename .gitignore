@@ -31,3 +31,5 @@ data/snapshots/
 
 # Claude Code local tool state - not project content.
 .claude/
+# Local Netlify folder
+.netlify
